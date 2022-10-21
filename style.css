@@ -40,12 +40,15 @@ body {
 }
 
 .mainLogo {
-    height: 8vh;
+    height: 50px;
+    width: auto;
+    /* height: 8vh; */
     vertical-align: middle;
 }
 
 .logoImg {
-    height: 3vh;
+    height: 25px;
+    /* height: 3vh; */
     vertical-align: middle;
     padding: 0 0.5vh;
 }
