@@ -98,12 +98,17 @@ h2 {
 
 .QualitiesSection {
   display: flex;
+  align-items: stretch;
   background-color: #ffd100;
   color: #202020;
 }
 
 .even-class {
-  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  /* margin: auto; */
   padding: 1%, 5%;
   width: 33%;
 }
@@ -111,6 +116,10 @@ h2 {
 @media screen and (max-width: 600px) {
   .topnav a {
     display: none;
+  }
+  .QualitiesSection {
+    flex-direction: column;
+    align-items: center;
   }
   .topnav a.icon {
     float: right;
