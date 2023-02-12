@@ -1,270 +1,232 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #000000;
-    color: #d6d6d6;
-    overflow-x: hidden;
-    overflow-y: scroll;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: #d6d6d6;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 h3,
 h2 {
-    margin: 0;
+  margin: 0;
 }
 
 h2 {
-    font-size: 4vh;
+  font-size: 4vh;
 }
-
 
 /* ==================NAVBAR=============== */
 
 #myTopnav.topnav {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 99999999;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999999;
 }
 
 .navItemsLeft {
-    padding-left: 25vh;
-    float: inline-start;
-    vertical-align: middle;
+  padding-left: 25vh;
+  float: inline-start;
+  vertical-align: middle;
 }
 
 .navItemsRight {
-    float: inline-end;
-    vertical-align: middle;
-    width: auto;
-    padding-right: 1vh;
+  float: inline-end;
+  vertical-align: middle;
+  width: auto;
+  padding-right: 1vh;
 }
 
 .topnav .navItem {
-    color: #d6d6d6;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: 1.5vh;
-    font-weight: 50;
-    letter-spacing: 0.1rem;
-    padding: 0 2vh;
-    font-weight: 500;
+  color: #d6d6d6;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5vh;
+  font-weight: 50;
+  letter-spacing: 0.1rem;
+  padding: 0 2vh;
+  font-weight: 500;
 }
 
 .mainLogo {
-    width: auto;
-    height: 8vh;
-    vertical-align: middle;
+  width: auto;
+  height: 8vh;
+  vertical-align: middle;
 }
 
 .logoImg {
-    height: 3vh;
-    vertical-align: middle;
-    padding: 0 0.5vh;
+  height: 3vh;
+  vertical-align: middle;
+  padding: 0 0.5vh;
 }
 
 .topnav .icon {
-    display: none;
+  display: none;
 }
-
 
 /* ==================Content=============== */
 
 .introVideo {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #myVideo {
-    right: 0;
-    bottom: 0;
-    max-width: 100%;
-    max-height: 100%;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .section {
-    padding: 5% 10%;
+  padding: 5% 10%;
 }
 
 .section-li {
-    font-size: 3vh;
-    font-weight: 100;
-    list-style: none;
+  font-size: 3vh;
+  font-weight: 100;
+  list-style: none;
 }
-
 
 /* ==================Qualities=============== */
 
 .QualitiesSection {
-    display: flex;
-    background-color: #ffd100;
-    color: #202020;
+  display: flex;
+  background-color: #ffd100;
+  color: #202020;
 }
 
 .even-class {
-    margin: auto;
-    padding: 1%, 5%;
-    width: 33%;
+  margin: auto;
+  padding: 1%, 5%;
+  width: 33%;
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
-
 
 /* ==================Galery=============== */
 
 .GalerySection {
-    background-color: #e6e6e6;
+  background-color: #e6e6e6;
 }
 
 .row {
-    display: -ms-flexbox;
-    /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap;
-    /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
-
 
 /* Create four equal columns that sits next to each other */
 
 .column {
-    -ms-flex: 23%;
-    /* IE10 */
-    flex: 23%;
-    max-width: 23%;
-    padding: 0 4px;
+  -ms-flex: 23%;
+  /* IE10 */
+  flex: 23%;
+  max-width: 23%;
+  padding: 0 4px;
 }
 
 .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
-
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 
 @media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
-
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
-
 
 /* ==================Galery MODAL =============== */
 
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+.ImgThumbnail {
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: 0.3s;
+  /* height: 250px;
+    width: 250px; */
 }
-
-#myImg:hover {
-    opacity: 0.7;
-}
-
+/* .ImgThumbnail:nth-of-type(1) {
+    margin-left: 20%;
+  } */
 .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+.modalImage {
+  margin: auto;
+  display: block;
+  max-height: 80%;
+  max-width: 80%;
 }
-
 #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
-
-.modal-content,
-#caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 95px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #ffd100;
+  cursor: pointer;
 }
-
 @media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
+  .modalImage {
+    width: 100%;
+  }
 }
